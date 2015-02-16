@@ -1,36 +1,20 @@
-# Really Simple Responsive HTML Email Template
+# IGSO mailing template for the IGSM 2015 meeting payment details
+This is a fork of https://github.com/leemunroe/html-email-template
 
-Sometimes all you want is a really simple HTML email template. Here it is.
+### The email template
+The template was needed for creating formatted emails that were sent using an Excel VBA-based mailing script using private domain that was then connected to Zoho mail.
+Each email was personalised with the person’s name and payment details. The side effect of using an email-to-email single address recipient list (vs. using Mailchimp and other mailer programs) was that it also reduces the chance of the mail being marked as spam. 
 
-Preview: http://leemunroe.github.io/html-email-template/email.html
+### Features
+* Some layout improvements that were necessary for displaying the mail consistently across email clients.
+* Placeholders in the form of %placeholder%, which can then be replaced programmatically.
+* Visual buttons that are supported by Outlook by using conditional code.
 
-### Sending emails using a marketing service like Campaign Monitor or Mailchimp?
 
-Use the template as is. They'll put the CSS inline for you when you put together your campaign.
+### Issues (not necessary bugs, rather features)
+Sadly the [Premailer](http://premailer.dialect.ca/), which is required for full email client compatibility has one issue with the template. It will break the  <![if !mso]> tags and will cause the Outlook client to show the buttons twice (once per Outlook code and then the general code that was supposed to be ignored).
 
+### IGSO and Github
+The IGSM event is an annual international student event hosted by a rotating new organising team. Transferring the information from one organiser to another has been traditionally done by zip files and the likes and gradually becoming wiki-based and now with a Github account.
 
-### Sending emails directly from your app or using a developer service like Mailgun?
-
-For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inline. You can use [Premailer](http://premailer.dialect.ca/) to do this automatically.
-
-* Copy all of email.html
-* Paste the HTML as the source into Premailer
-* Copy the HTML results and use them in your email view/template
-
-Note that some services may allow you to opt into CSS inlining, such as
-[Mandrill](http://help.mandrill.com/entries/24460141-Does-Mandrill-inline-CSS-automatically-).
-
-### Tried and tested
-
-Tested on all major email clients. Mobile, desktop and web. 
-
-<img src="http://i.imgur.com/TtYvCTr.jpg" alt="Email preview" width="800">
-
-Hat tip to Zurb's [Ink](http://zurb.com/ink/) for their awesome collection of email templates, which this was adapted from.
-
-### More HTML email resources
-
-I've open-sourced a few other resources you might find useful:
-
-* [Transactional HTML Email Templates](https://github.com/mailgun/transactional-email-templates)
-* [Grunt.js Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
+This allows templates and files that are in the spirit of Github to be transferred from one year to the next without requiring passwords. This also allows to build upon the tools that have been created in the previous years, even if everything is not used at that particular event.
