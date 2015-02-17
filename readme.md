@@ -1,5 +1,6 @@
 # IGSO mailing template for the IGSM 2015 meeting payment details
 This is a fork of https://github.com/leemunroe/html-email-template
+
 You can see the preview of this email template here: http://igso.github.io/IGSO-mailing-template/email.html
 
 ### The email template
