@@ -1,1 +1,71 @@
-<a href="email.html">Preview email template</a>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Igso-mailing-template by IGSO</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Igso-mailing-template</h1>
+        <p>IGSO mailing template</p>
+
+        <p class="view"><a href="https://github.com/IGSO/IGSO-mailing-template">View the Project on GitHub <small>IGSO/IGSO-mailing-template</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/IGSO/IGSO-mailing-template/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/IGSO/IGSO-mailing-template/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/IGSO/IGSO-mailing-template">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="igso-mailing-template-for-the-igsm-2015-meeting-payment-details" class="anchor" href="#igso-mailing-template-for-the-igsm-2015-meeting-payment-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>IGSO mailing template for the IGSM 2015 meeting payment details</h1>
+
+<p>This is a fork of <a href="https://github.com/leemunroe/html-email-template">https://github.com/leemunroe/html-email-template</a></p>
+
+<h3>
+<a id="the-email-template" class="anchor" href="#the-email-template" aria-hidden="true"><span class="octicon octicon-link"></span></a>The email template</h3>
+
+<p>The template was needed for creating formatted emails that were sent using an Excel VBA-based mailing script using private domain that was then connected to Zoho mail.
+Each email was personalised with the person’s name and payment details. The side effect of using an email-to-email single address recipient list (vs. using Mailchimp and other mailer programs) was that it also reduces the chance of the mail being marked as spam. </p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ul>
+<li>Some layout improvements that were necessary for displaying the mail consistently across email clients.</li>
+<li>Placeholders in the form of %placeholder%, which can then be replaced programmatically.</li>
+<li>Visual buttons that are supported by Outlook by using conditional code.</li>
+</ul>
+
+<h3>
+<a id="issues-not-necessary-bugs-rather-features" class="anchor" href="#issues-not-necessary-bugs-rather-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issues (not necessary bugs, rather features)</h3>
+
+<p>Sadly the <a href="http://premailer.dialect.ca/">Premailer</a>, which is required for full email client compatibility has one issue with the template. It will break the   tags and will cause the Outlook client to show the buttons twice (once per Outlook code and then the general code that was supposed to be ignored).</p>
+
+<h3>
+<a id="igso-and-github" class="anchor" href="#igso-and-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>IGSO and Github</h3>
+
+<p>The IGSM event is an annual international student event hosted by a rotating new organising team. Transferring the information from one organiser to another has been traditionally done by zip files and the likes and gradually becoming wiki-based and now with a Github account.</p>
+
+<p>This allows templates and files that are in the spirit of Github to be transferred from one year to the next without requiring passwords. This also allows to build upon the tools that have been created in the previous years, even if everything is not used at that particular event.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/IGSO">IGSO</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
